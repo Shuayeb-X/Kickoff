@@ -1,5 +1,6 @@
-name: Read index.html and Print Content
+name: Read index.html
 
+# Trigger workflow when code is pushed to master branch
 on:
   push:
     branches:
@@ -10,11 +11,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the repository
+      # Checkout the repository code
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Step 2: Read and print the content of index.html
+      # Read and print the content of index.html
       - name: Display file content
         run: |
           echo "Content of index.html:"
