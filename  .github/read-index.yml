@@ -3,7 +3,7 @@ name: Read index.html and Print Content
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   read-file:
