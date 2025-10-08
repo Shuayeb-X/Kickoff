@@ -4,7 +4,7 @@ name: Read index.html
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   read-file:
